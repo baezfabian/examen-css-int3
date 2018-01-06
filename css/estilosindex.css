@@ -1,0 +1,261 @@
+html
+{
+  font-family: Bree Serif;
+}
+#headerLinks>a:hover {
+	color: #0098DA;
+}
+header
+{
+  display: flex;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #292E52;
+  color: #A8CF45;
+  font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+}
+header {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 150%;
+    width: 60%
+  }
+
+  to {
+    margin-top: -5%;
+    width: 100%;
+  }
+}
+#headerLinks
+{
+  width: 50%;
+  float: left;
+	text-align: right;
+	padding-top: 30px;
+	padding-bottom: 30px;
+  padding-right: 30px;
+}
+#headerLinks>a
+{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding-left: 30px;
+  }
+#logo
+{
+  float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 20%;
+	text-align: center;
+}
+#imglogo:hover
+{filter: opacity(.5);}
+
+#titulo
+{
+  width: 30%;
+  padding-left: 10px;
+}
+.contenedor
+{
+  width: 900px;
+  border-top: 5px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.central
+{
+  background-color: #0098DA;
+  border-top: 5px;
+  padding: 15px 15px 15px 15px;
+  margin-top: 5px;
+  justify-content: center;
+}
+#imgcentral
+{
+  width: 100%;
+  margin: 0 auto;
+}
+.central:hover{
+background-color: transparent;
+}
+#imgcentral:hover
+{
+border-radius:100%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 8px 8px #0098DA;
+-webkit-box-shadow: 0px 0px 8px 8px #0098DA;
+}
+.secundaria
+{
+  display: flex;
+  text-align: center;
+  padding: 5px 0 5px 0;
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imgttt>a, .imgccc>a
+{
+  text-decoration: none;
+  color: #292E52;
+}
+.imgttt, .imgccc
+{
+  border-radius: 0 0 10px 10px;
+  background-color: #A8CF45;
+  width: 100%;
+  margin: 5px;
+  padding-top: 30px;
+}
+#imgccc, #imgttt
+{
+  width: 100%;
+  margin: 0 auto;
+}
+#imt:hover
+{
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  -webkit-transition: .2s;
+  transition: .2s;
+  box-shadow: 0px 0px 5px 5px #0098DA;
+  -webkit-box-shadow: 0px 0px 5px 5px #0098DA;
+}
+#imc:hover
+{
+  -webkit-transform: translate(5px, 10px);
+  transform: translate(5px, 10px);
+  -webkit-transition: .2s;
+  transition: .2s;
+  box-shadow: 0px 0px 5px 5px #0098DA;
+  -webkit-box-shadow: 0px 0px 5px 5px #0098DA;
+}
+.imgttt>a:hover, .imgccc>a:hover
+{
+	color: #0098DA;
+}
+footer
+{
+  background-color: #DCDDDF;
+  font-family: Ubuntu Condensed;
+  color: #292E52;
+  text-align: center;
+  display: flex;
+}
+.fcont, .fredes, .fter, .fder
+{
+  width: 25%;
+  padding: 5px 5px 5px 5px;
+}
+.fcont>a, .fredes>a
+{
+  text-decoration: none;
+  color: #292E52;
+}
+.fcont>a:hover, .fredes>a:hover
+{
+  color: white;
+}
+.imgfoo
+{
+  width: 8%;
+}
+.imgfoo2
+{
+  width: 20%;
+}
+.imgfoo:hover, .imgfoo2:hover
+{
+  filter: opacity(.5);
+}
+@media (max-width: 480px)
+{
+  .header
+  {
+    display: -webkit-flow-root;
+  	display: flow-root;
+  	-webkit-flex-flow: row wrap;
+  	flex-flow: row wrap;
+  }
+  .contenedor
+  {
+    width: 100%;
+    border-top: 5px;
+    padding: 0 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .central
+  {
+    background-color: #0098DA;
+    border-top: 5px;
+    padding: 5px 5px 5px 5px;
+
+  }
+  #headerLinks>a
+  {
+    padding-left: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: 0 auto;
+    }
+  #logo, #titulo, #headerLinks
+  {
+    width: 100%;
+    text-align: center;
+    padding: 0 auto;
+
+  }
+  #headerLinks>a
+  {
+    display: flow-root;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+  .secundaria
+  {
+  width: 100%;
+  display: -webkit-flow-root;
+  display: flow-root;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  border-top: 5px;
+  border-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0 0 0;
+}
+.imgttt, .imgccc
+{
+  width: 100%;
+  border-top: 5px;
+  border-bottom: 5px;
+  padding: 7px 0px 5px 0px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#imc, #imt
+{
+  width: 100%;
+}
+footer
+{
+  display: flow-root;
+}
+.fcont, .fredes, .fter, .fder
+{
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+}
+}
